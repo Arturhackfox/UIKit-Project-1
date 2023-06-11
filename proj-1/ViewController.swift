@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //MARK: loading pictures with FileManager
+
         let fm = FileManager.default
         let resourcePath = Bundle.main.resourcePath!
         let items = try! fm.contentsOfDirectory(atPath: resourcePath)
